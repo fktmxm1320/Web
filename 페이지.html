@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=100%" charset="utf-8">
+        <title>페이지</title>
+        <style>
+            body{
+                overflow:scroll;
+                margin: 0 auto;
+                background-color:white;
+            }
+            #banner{
+                background-color: black;
+                width: 100%; height: 80px;
+                position:relative;
+                position: fixed;
+                min-width: 1100px;
+                z-index: 9999;
+            }
+            #logo{
+                color: white;
+                font-family:fantasy;
+                font-size: 40px;
+                font-weight: bold;
+                float: left;
+                position: absolute;
+                left: 3%; top: 15%;
+            }
+            #menu{
+                color: white;
+                font-size: 25px;
+                
+                height: 100px;
+                font-weight: bold;
+            }
+            .menu{
+                position:absolute;
+                padding: 7px;
+            }
+            #aa{
+                left: 58%;
+                top: 20%;
+                color: white;
+            }
+            #bb{
+                left: 68%;
+                top: 20%;
+                color: white;
+            }
+            #cc{
+                left: 78%;
+                top: 20%;
+                color: white;
+            }
+            #dd{
+                left: 88%;
+                top: 20%;
+                color: white;
+            }
+            .qwer{
+                width: 100%; height: 80px;
+            }
+            #aa:hover{
+                color:aqua;
+                transition: 0.5s;
+            }
+            #bb:hover{
+                color:aqua;
+                transition: 0.5s;
+            }
+            #cc:hover{
+                color:aqua;
+                transition: 0.5s;
+            }
+            #dd:hover{
+                color:aqua;
+                transition: 0.5s;
+            }
+            #home{
+                width: 100%; height: 900px;
+                min-width: 1850px;
+                overflow: hidden;
+                position: relative;
+            }
+            #home>img{
+                width: 100%; height: 100%;
+                position: absolute;
+            }
+            .title{
+                position: absolute;
+                color: white;
+                font-weight:bold;
+                font-family: fantasy;
+                font-size:90px;
+                text-shadow: 6px 6px black;
+                margin-top: 240px;
+                margin-left: 200px;
+                transform:rotate(7deg);
+                animation-name:a;
+                animation-duration: 5s;
+            }
+            .aa{
+                position: absolute;
+                color:rgb(145, 94, 43);
+                font-weight:bold;
+                font-size:50px;
+                
+                margin-top: 500px;
+                margin-left: 300px;
+                transform:rotate(7deg);
+                animation-name:a;
+                animation-duration: 5s;
+                
+                text-shadow: 5px 5px black;
+            }
+            .bb{
+                position: absolute;
+                color: white;
+                font-weight:bold;
+                font-size: 35px;
+                text-shadow: 5px 5px black;
+                margin-top: 580px;
+                margin-left: 310px;
+                transform:rotate(7deg);
+                animation-name:a;
+                animation-duration: 5s;
+            }
+            .cc{
+                text-align: right;
+                position: absolute;
+                color:black;
+                font-weight:bold;
+                font-size: 30px;
+                margin-top: 300px;
+                margin-left: 1100px;
+                opacity: 0.7;
+                width: 700px;
+                animation-name:a;
+                animation-duration: 5s;
+            }
+            #a>h1{
+                text-align: center;
+            }
+            #a{
+                width: 100%; height: 1500px;
+                min-width: 1500px;
+                position:relative;
+            }
+            #books img{
+                width: 200px;
+                height: 300px;
+            }
+            .book{
+                position: absolute;
+            }
+            #ps{
+                width: 400px; height: 500px;
+                padding: 20px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                text-align: center;
+                left: 7.2%; top: 20%;
+            }
+            #java{
+                width: 400px; height: 500px;
+                padding: 20px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                text-align: center;
+                left: 38.2%; top: 20%;
+            }
+            #sql{
+                width: 400px; height: 500px;
+                padding: 20px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                text-align: center;
+                left: 69.2%; top: 20%;
+            }
+            #com{
+                width: 400px; height: 500px;
+                padding: 20px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                text-align: center;
+                left: 7.2%; top: 63%;
+            }
+            #excel{
+                width: 400px; height: 500px;
+                padding: 20px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                text-align: center;
+                left: 38.2%; top: 63%;
+            }
+            span{
+                font-weight: bold;
+                color: red;
+            }
+            .buy{
+                width: 70px; height: 30px;
+                font-size: 20px;
+                padding-bottom: 3px;
+                background-color: lawngreen;
+                margin-top: 30px;
+                margin-left: 165px;
+                box-shadow: 1px 1px black;
+                color: black;
+            }
+            #b>h1{
+                text-align: center;
+            }
+            #b{
+                min-width: 1500px;
+                width: 100%; height: 1000px;
+                position:relative;
+                margin-top: 30px;
+            }
+            #books2 img{
+                width: 200px;
+                height: 300px;
+            }
+            #ncs{
+                width: 400px; height: 500px;
+                padding: 20px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                text-align: center;
+                left: 7.2%; top: 30%;
+            }
+            #talk{
+                width: 400px; height: 500px;
+                padding: 20px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                text-align: center;
+                left: 38.2%; top: 30%;
+            }
+            .book{
+                border: solid 1px rgb(139, 139, 139);
+            }
+            .book:hover{
+                background-color:rgb(197, 197, 197);
+            }
+            #c{
+                min-width: 1100px;
+                width: 100%; height: 700px;
+                background-color: rgb(240, 240, 240);
+            }
+            #c>h1{
+                text-align: center;
+            }
+            .i{
+                width: 150px; height: 200px;
+                float: left;
+                padding-right: 20px;
+            }
+            .sns{
+                width: 38px; height: 38px;
+            }
+            #contact{
+                position: relative;
+            }
+            #c h2{
+                text-align: center;
+            }
+            #seller{
+                position: absolute;
+                left: 10%;
+            }
+            #text{
+                float:right;
+            }
+            #w{
+                position: relative;
+                width: 500px;
+                margin-left: 62%;
+            }
+            #text, li{
+                color:rgb(71, 71, 71);
+            }
+            #end{
+                min-width: 1100px;
+                width:100%; height:100px;
+                background-color: rgb(114, 114, 114);
+                text-align: center;
+                color: white;
+            }
+            #r{
+                text-align: center;
+                width: 70px; height: 70px;
+                color: white;
+                font-size: 65px;
+                position: absolute;
+                left: 90%; top: 85%;
+                position: fixed;
+                z-index: 888;
+                background-color: black;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            ul{
+                margin-left: 40px;
+            }
+            @keyframes a{
+                0%{opacity: 0;}
+                100%{opacity: 1;}
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#"><div id="r">^</div></a>
+        <div id="banner">
+            <div id="logo">수민's Bookstore</div>
+            <div id="menu">
+                <a href="#"><div id="aa" class="menu">Home</div></a>
+                <a href="#a"><div id="bb" class="menu">전공책</div></a>
+                <a href="#b"><div id="cc" class="menu">교양책</div></a>
+                <a href="#c"><div id="dd" class="menu">Contact</div></a>
+            </div>
+        </div>
+        <div class="qwer"></div>
+        <div id="home">
+            <img src="contents/img/b.jpg">
+            <div class="title">수민's Bookstore</div>
+            <div class="aa">동양미래대학교</div>
+            <div class="bb">컴퓨터정보공학과</div>
+            <div class="cc">동양미래대 컴퓨터정보공학과 신입생들을 위한<br>
+                            19학번 선배님의 필기 가득한 교과서들을<br>
+                            지금 만나보세요.</div>
+        </div>
+        <div id="a">
+            <br><br><br><br>
+            <h1>전공책<br>____</h1>
+            <div id="books">
+                <div id="ps" class="book">
+                    <img src="contents/img/포토샵.jpg"><br>
+                    <p>맛있는 디자인 포토샵 CC2018</p>
+                    <p>상태 : 최상</p>
+                    <p>필기 : X</p>
+                    <p>
+                        <del>22,000원</del> <span>12,000원</span>
+                    </p>
+                    <div class="buy"><a href="구매 페이지.html">구매</a></div>
+                </div>
+                <div id="java" class="book">
+                    <img src="contents/img/자바.jpg"><br>
+                    <p>절대 JAVA</p>
+                    <p>상태 : 하</p>
+                    <p>필기 : O</p>
+                    <p>
+                        <del>28,000원</del> <span>12,000원</span>
+                    </p>
+                    <div class="buy"><a href="구매 페이지.html">구매</a></div>
+                </div>
+                <div id="sql" class="book">
+                    <img src="contents/img/sql.jpg"><br>
+                    <p>데이터베이스 실습</p>
+                    <p>상태 : 중</p>
+                    <p>필기 : X</p>
+                    <p>
+                        <del>17,000원</del> <span>10,000원</span>
+                    </p>
+                    <div class="buy"><a href="구매 페이지.html">구매</a></div>
+                </div>
+                <div id="com" class="book">
+                    <img src="contents/img/컴구조.jpg"><br>
+                    <p>컴퓨터 개론</p>
+                    <p>상태 : 최상</p>
+                    <p>필기 : X</p>
+                    <p>
+                        <del>27,000원</del> <span>13,000원</span>
+                    </p>
+                    <div class="buy"><a href="구매 페이지.html">구매</a></div>
+                </div>
+                <div id="excel" class="book">
+                    <img src="contents/img/컴활.jpg"><br>
+                    <p>엑셀 + 파워포인트 2016 한글 NEO</p>
+                    <p>상태 : 최상</p>
+                    <p>필기 : X</p>
+                    <p>
+                        <del>18,800원</del> <span>10,000원</span>
+                    </p>
+                    <div class="buy"><a href="구매 페이지.html">구매</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="b">
+            <br><br><br><br>
+            <h1>교양책<br>____</h1>
+            <div id="books2">
+                <div id="ncs" class="book">
+                    <img src="contents/img/ncs.jpg"><br>
+                    <p>NCS 직업기초능력</p>
+                    <p>상태 : 중</p>
+                    <p>필기 : O</p>
+                    <p>
+                    <del>20,000원</del> <span>9,000원</span>
+                    </p>
+                    <div class="buy"><a href="구매 페이지.html">구매</a></div>
+                </div>
+                <div id="talk" class="book">
+                    <img src="contents/img/대기.jpg"><br>
+                    <p>입은 하나 귀는 둘</p>
+                    <p>상태 : 상</p>
+                    <p>필기 : O</p>
+                    <p>
+                    <del>16,000원</del> <span>9,000원</span>
+                    </p>
+                    <div class="buy"><a href="구매 페이지.html">구매</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="c">
+            <br><br><br>
+            <h1>Contact<br>____</h1><br>
+            <div id="contact">
+                
+                <div id="seller">
+                    <h2>판매자 정보</h2><br><br>
+                    <img src="contents/img/박수민.jpg" class="i">
+                    <div id="text">
+                        <h3>박 수 민</h3>
+                        2000.07.27<br>
+                        경기도 부천시<br>
+                        010-4801-8505<br>
+                        fktmxm1320@naver.com<br>
+                        동양미래대학교 컴퓨터정보공학과 재학중
+                    </div>
+                    <div style="clear:both"></div><br>
+                    <a href="https://www.kakaocorp.com/service/KakaoTalk?lang=ko" target="_blank"><img src="contents/img/캡처.PNG" class="sns"></a>&nbsp;
+                    <a href="https://blog.naver.com/PostList.nhn?blogId=fktmxm1320" target="_blank"><img src="contents/img/캡처2.PNG" class="sns"></a>&nbsp;
+                    <a href="https://www.facebook.com/" target="_blank"><img src="contents/img/캡처3.PNG" class="sns"></a>
+                </div>
+            </div>
+            <div id="w">
+                <h2>주의사항</h2><br>
+                <ul>
+                    <li>환불은 불가능 합니다.</li><br>
+                    <li>택배 이용시 배송비 2,500원이 추가됩니다.</li><br>
+                    <li>직거래시 장소는 동양미래대학교에서 진행합니다.</li><br>
+                    <li>* 책 상태의 구분 : 최상(새 책이나 다름없는 상태),<br>
+                                          상(필기가 없고 깔끔한 상태),<br>
+                                          중(필기가 있지만 찢어진 부분 없이 깔끔한 상태),<br>
+                                          하(필기가 있고 군데군데 찢어진 부분이 있는 상태)</li>
+                </ul>
+            </div>
+        </div>
+        <div id="end"><br><br>Copyright ⓒ 2019 Sumin Park All right reserved.</div>
+    </body>
+</html>

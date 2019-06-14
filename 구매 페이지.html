@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>구매 페이지</title>
+        <style>
+            body{
+                background-color: rgb(248, 248, 248);
+                margin:0 auto;
+            }
+            #banner{
+                background-color: black;
+                width: 100%; height: 80px;
+                position:relative;
+                position: fixed;
+                min-width: 900px;
+                z-index: 9999;
+            }
+            #logo{
+                color: white;
+                font-family:fantasy;
+                font-size: 40px;
+                font-weight: bold;
+                position: absolute;
+                left: 42%; top: 15%;
+            }
+            #buy{
+                margin-top: 70px;
+                position: absolute;
+                width: 680px; height: 750px;
+                left: 29%; top:5%;
+                padding: 20px;
+                padding-top: 5px;
+                padding-left: 85px;
+                z-index: 5;
+            }
+            .f{
+                width: 600px; height: 30px;
+            }
+
+            .btn1{
+                position: absolute;
+                width: 80px; height: 40px;
+                background-color:black;
+                color: white;
+                left: 47%; 
+                font-size: 17px;
+                z-index: 500;
+                margin-bottom: 20px;
+            }
+            #s{
+                width: 100%; height: 900px;
+            }
+            #n{
+                position: relative;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+            <div id="logo">수민's Bookstore</div>
+        </div>
+        <form>
+            <div id="buy" class="bookb">
+                <h2>구매자 정보</h2>
+                이름 *<br>
+                <input type="text" placeholder="이름을 입력해주세요." class="f"><br><br>
+                생년월일 *<br>
+                <input type="date" class="f"><br><br>
+                성별 *<br>
+                <input type="radio" name="userSex">남 <input type="radio" name="userSex">여<br><br>
+                주소 *<br>
+                <input type="text" placeholder="주소를 입력해주세요." class="f"><br><input type="text" class="f"><br><br>
+                휴대전화 *<br>
+                <input type="tel" placeholder="번호를 입력해주세요." class="f"><br><br>
+                email<br>
+                <input type="email" placeholder="이메일을 입력해주세요." class="f"><br><br>
+                거래 방식 *<br>
+                <input type="radio" name="a">직거래 <input type="radio" name="a">택배 (+2500원)<br><br>
+                요청사항<br>
+                <textarea rows="6" cols="83"></textarea><br><br>
+            </div>
+        </form>
+        <div id="s"></div>
+        <div id="n">
+            <a href="완료 페이지.html"><button class="btn1">확인</button></a>
+        </div>
+    </body>
+</html>
